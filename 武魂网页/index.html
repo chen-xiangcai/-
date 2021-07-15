@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<style type="text/css">
+			body,
+			p,
+			ul,
+			li,
+			ol,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			img {
+				padding: 0;
+				margin: 0;
+			}
+
+			ul,
+			li,
+			ol {
+				list-style: none;
+			}
+
+			img {
+				border: 0;
+				vertical-align: middle;
+			}
+
+			a {
+				color: #000;
+				text-decoration: none;
+			}
+
+			body {
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+
+			.header {
+				min-width: 1200px;
+				height: 55px;
+				border-bottom: 1px solid #DADADA;
+			}
+
+			.header div {
+				float: left;
+				height: 55px;
+				line-height: 55px;
+			}
+
+			.header .left {
+				background: #CF1132;
+				width: 180px;
+				text-align: center;
+				color: #fff;
+			}
+
+			.header .center img {
+				vertical-align: top;
+				margin-right: 170px;
+			}
+
+			.header ul {
+				float: right;
+			}
+
+			.header ul li {
+				float: left;
+				width: 138px;
+				height: 55px;
+				line-height: 55px;
+				text-align: center;
+				border-left: 1px solid #DADADA;
+				overflow: hidden;
+			}
+
+			.header ul li a {
+				width: 100%;
+				height: 54px;
+				display: block;
+				transition: transform 1s;
+			}
+
+			.header ul .move:hover a {
+				transform: translate(0, -55px);
+			}
+
+			.header ul li a:hover {
+				background: #F5F5F5;
+				color: #BC2E2E;
+				border-bottom: 1px solid #BC2E2E;
+			}
+
+			.main {
+				min-width: 1200px;
+				background: url(img/11.jpg) no-repeat center top, url(img/10.jpg) no-repeat center bottom;
+				background-color: #F2F6F9;
+				padding-bottom: 200px;
+				position: relative;
+			}
+
+			.main .content {
+				width: 1020px;
+				margin: 0 auto;
+			}
+
+			.main .content .rows-1 {
+				height: 708px;
+				position: relative;
+			}
+
+			.main .content .rows-1 .logo {
+				position: absolute;
+				width: 150px;
+				height: 91px;
+				background: url(img/150.webp) no-repeat;
+				left: -116px;
+				top: 15px;
+			}
+
+			.main .content .rows-1 :nth-child(2),
+			.main .content .rows-1 :nth-child(3) {
+				position: absolute;
+				right: 42px;
+				width: 111px;
+				height: 30px;
+				font-size: 14px;
+				text-align: center;
+				line-height: 30px;
+				border-radius: 3px;
+			}
+
+			.main .content .rows-1 :nth-child(2) {
+				background: #EEE5C8;
+				top: 52px;
+				color: #504138;
+			}
+
+			.main .content .rows-1 :nth-child(2):hover {
+				background: #F8F0C4;
+				color: #807231;
+			}
+
+			.main .content .rows-1 :nth-child(3) {
+				background: #BD3E3E;
+				top: 90px;
+				color: #fff;
+			}
+
+			.main .content .rows-1 :nth-child(3):hover {
+				background: #D08282;
+			}
+
+			.main .content .rows-2 {
+				height: 403px;
+			}
+
+			.main .content .rows-2 .box {
+				width: 325px;
+				height: 403px;
+				float: left;
+			}
+
+			.main .content .rows-2 .center {
+				margin: 0 22px;
+			}
+
+			.main .content .rows-2 .box h3 {
+				height: 79px;
+				background: url(img/event-title-2020429_1d0de48.png) no-repeat;
+			}
+
+			.main .content .rows-2 .center h3 {
+				background-position: -327px 0;
+			}
+
+			.main .content .rows-2 .right h3 {
+				background-position: -654px 0;
+			}
+
+			.main .content .rows-2 .box div {
+				height: calc(403px - 100px);
+				background: #F0F0EF;
+				padding-left: 32px;
+				padding-right: 32px;
+				padding-top: 21px;
+			}
+
+			.main .content .rows-2 .box div form>input {
+				width: 100%;
+				height: 43px;
+				margin-bottom: 14px;
+				text-indent: 5px;
+			}
+
+			.main .content .rows-2 .box div form label {
+				margin: 5px 0;
+				display: block;
+				color: #999;
+				font-size: 14px;
+			}
+
+			.main .content .rows-2 .box div form label a {
+				color: #999;
+			}
+
+			.main .content .rows-2 .box div form label a:hover {
+				color: #666;
+			}
+
+			.main .content .rows-2 .box div form label span {
+				width: 12px;
+				height: 12px;
+				border: 1px solid #666;
+				display: inline-block;
+			}
+
+			.main .content .rows-2 .box div form label input {
+				display: none;
+			}
+
+			.main .content .rows-2 .box div form label input:checked+span {
+				background: url(img/9.png) no-repeat center center;
+			}
+
+			.main .content .rows-2 .box div form>input:nth-child(4) {
+				background: #F1D06C;
+				border-radius: 5px;
+				border: 1px solid #999;
+				font-size: 16px;
+				margin-top: 5px;
+			}
+
+			.main .content .rows-2 .box div form>input:nth-child(4):hover,
+			.main .content .rows-2 .center div button:nth-child(3):hover,
+			.main .content .rows-2 .right div button:hover {
+				background: #CDB05B;
+			}
+
+			.main .content .rows-2 .box div button {
+				width: 100%;
+				height: 50px;
+				margin-top: 15px;
+				font-size: 20px;
+				border: 1px solid #999;
+				border-radius: 5px;
+			}
+
+			.main .content .rows-2 .center div button:nth-child(2) {
+				background: #486A9D;
+				color: #fff;
+			}
+
+			.main .content .rows-2 .center div button:nth-child(2):hover {
+				background: #39547E;
+			}
+
+			.main .content .rows-2 .center div button:nth-child(3),
+			.main .content .rows-2 .right div button {
+				background: #F1D06C;
+			}
+
+			.main .content .rows-3 {
+				height: 656px;
+				margin-top: 50px;
+			}
+
+			.main .content .rows-3 h3 {
+				height: 50px;
+				background: url(img/gift-title2_cdb4a23.jpg) no-repeat;
+			}
+
+			.main .content .rows-3 ul li {
+				width: 194px;
+				height: 282px;
+				background: url(img/fab_z_4df6da7.png);
+				float: left;
+				margin-top: 12px;
+				margin-right: 12px;
+				cursor: pointer;
+			}
+
+			.main .content .rows-3 ul li:nth-child(5),
+			.main .content .rows-3 ul li:nth-child(10) {
+				margin-right: 0;
+			}
+
+			.main .content .rows-3 ul li:nth-child(1) {
+				background-position: -204px 0;
+			}
+
+			.main .content .rows-3 ul li:nth-child(2) {
+				background-position: -408px -292px;
+			}
+
+			.main .content .rows-3 ul li:nth-child(3) {
+				background-position: -408px 0;
+			}
+
+			.main .content .rows-3 ul li:nth-child(4) {
+				background-position: 0 -292px;
+			}
+
+			.main .content .rows-3 ul li:nth-child(5) {
+				background-position: -204px -292px;
+			}
+
+			.main .content .rows-3 ul li:nth-child(7) {
+				background-position: -612px -292px;
+			}
+
+			.main .content .rows-3 ul li:nth-child(8) {
+				background-position: -816px 0;
+			}
+
+			.main .content .rows-3 ul li:nth-child(9) {
+				background-position: -816px -292px;
+			}
+
+			.main .content .rows-3 ul li:nth-child(10) {
+				background-position: 0 -584px;
+			}
+
+			.main .content .rows-3 ul li:hover span {
+				width: 100%;
+				height: 100%;
+				display: block;
+				background: url(img/fab_z_4df6da7.png) -612px 0;
+			}
+
+			.main .content .rows-4 {
+				height: 495px;
+				margin-top: 50px;
+			}
+
+			.main .content .rows-4 h3 {
+				height: 50px;
+				background: url(img/8.png) no-repeat;
+			}
+
+			.main .content .rows-4 .box {
+				height: 425px;
+				margin-top: 20px;
+				position: relative;
+			}
+
+			.main .content .rows-4 .box input {
+				width: 270px;
+				height: 85px;
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+			}
+
+			.main .content .rows-4 .box p {
+				width: 270px;
+				height: 85px;
+				background: #556275;
+			}
+
+			.main .content .rows-4 .box p span {
+				width: 260px;
+				height: 84px;
+				background: #445062;
+				display: block;
+				font-size: 18px;
+				text-align: center;
+				line-height: 84px;
+				color: #a6abb1;
+			}
+
+			.main .content .rows-4 .box input:checked+p {
+				background: #556275 url(img/3.png) no-repeat 260px center;
+			}
+
+			.main .content .rows-4 .box input:checked+p span {
+				background: none;
+				color: #fae8a0;
+			}
+
+			.main .content .rows-4 .box input:hover+p span {
+				color: #FAE8A0;
+			}
+
+			.main .content .rows-4 .box ul {
+				width: calc(100% - 270px);
+				height: 100%;
+				position: absolute;
+				left: 270px;
+				top: 0px;
+			}
+
+			.main .content .rows-4 .box ul li {
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+
+			.main .content .rows-4 .box input:nth-child(1):checked~ul li:nth-child(1),
+			.main .content .rows-4 .box input:nth-child(3):checked~ul li:nth-child(2),
+			.main .content .rows-4 .box input:nth-child(5):checked~ul li:nth-child(3),
+			.main .content .rows-4 .box input:nth-child(7):checked~ul li:nth-child(4),
+			.main .content .rows-4 .box input:nth-child(9):checked~ul li:nth-child(5) {
+				display: block;
+			}
+
+			.main .share {
+				width: 100%;
+				min-width: 1200px;
+				height: 40px;
+				background-color: rgba(0, 0, 0, 0.4);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+
+			.main .share ul {
+				width: 500px;
+				margin: 0 auto;
+			}
+
+			.main .share ul li {
+				float: left;
+				line-height: 40px;
+				font-size: 14px;
+				padding: 0 10px;
+				color: #b7b198;
+			}
+
+			.main .share ul li a {
+				color: #B7B198;
+			}
+
+			.main .share ul li a i {
+				margin-right: 5px;
+			}
+
+			.main .share ul li a:hover {
+				color: #fff;
+			}
+
+			.footer {
+				height: 185px;
+				background: #272727;
+				padding-top: 30px;
+			}
+
+			.footer .footer-box {
+				width: 1024px;
+				height: 155px;
+				margin: 0 auto;
+			}
+
+			.footer .footer-box .box {
+				height: 48px;
+			}
+
+			.footer .footer-box .box div {
+				float: left;
+			}
+
+			.footer .footer-box .box div ul {
+				margin-bottom: 10px;
+				overflow: hidden;
+			}
+
+			.footer .footer-box .box div ul li {
+				float: left;
+				color: #E23A3F;
+				padding-right: 5px;
+			}
+
+			.footer .footer-box .box div ul li a {
+				color: #E23A3F;
+				padding-right: 5px;
+			}
+
+			.footer .footer-box .box div span {
+				color: #E23A3F;
+			}
+
+			.footer .footer-box .box div:nth-child(2)>a {
+				position: relative;
+				background: #610000;
+				color: #fff;
+				left: 190px;
+				padding: 5px 10px;
+			}
+
+			.footer .footer-box .box div:nth-child(2) a:hover {
+				text-decoration: underline;
+			}
+
+			.footer .footer-box .box .img a:nth-child(3) {
+				margin: 0 20px;
+			}
+
+			.footer .footer-box p,
+			.footer .footer-box p a {
+				color: #E23A3F;
+				line-height: 22px;
+			}
+
+			.footer .footer-box p a:hover {
+				text-decoration: underline;
+			}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="left"><i></i>游戏全目录</div>
+			<div class="center">
+				<img src="img/5efc39477f9d2a02cc2c619616agMRYg02.jpg" alt="" />
+			</div>
+			<div class="right">
+				<a href="#"><img src="img/logo_b5525b7.png" /></a>
+			</div>
+			<ul>
+				<li class="move">
+					<a href="#">限时领取免费课程</a>
+					<a href="#">游戏充值9.8折</a>
+				</li>
+				<li>
+					<a href="#"><i></i>热点推荐</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="content">
+				<div class="rows-1">
+					<a href="#" class="logo"></a>
+					<a href="#"><i></i>进入官网</a>
+					<a href="#"><i></i>下载游戏</a>
+				</div>
+				<div class="rows-2">
+					<div class="box">
+						<h3></h3>
+						<div>
+							<form action="#" method="post">
+								<input type="text" placeholder="邮箱账号" />
+								<input type="password" placeholder="6-16位密码，区分大小写" />
+								<label>
+									<input type="checkbox" />
+									<span></span>
+									我同意<a href="#">《服务条款》</a>和<a href="#">《隐私保护和个人信息利用政策》</a>
+								</label>
+								<input type="submit" value="下一步" />
+							</form>
+						</div>
+					</div>
+					<div class="box center">
+						<h3></h3>
+						<div>
+							<video width="100%" controls="controls">
+								<source src="https://nie.v.netease.com/r/video/20200429/6c589203-3b2d-4ef1-877d-5aed526c8688.mp4" type="video/mp4">
+								</source>
+								当前浏览器不支持 video直接播放，点击这里下载视频：
+								<a href="myvideo.webm">下载视频</a>
+							</video>
+							<button>客户端下载</button>
+							<button>迷你客户端</button>
+						</div>
+					</div>
+					<div class="box right">
+						<h3></h3>
+						<div>
+							<img src="img/img5_a56dd42.jpg" width="100%" />
+							<button>迷你客户端</button>
+						</div>
+					</div>
+				</div>
+				<div class="rows-3">
+					<h3></h3>
+					<ul>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+						<li><span></span></li>
+					</ul>
+				</div>
+				<div class="rows-4">
+					<h3></h3>
+					<div class="box">
+						<input type="radio" name="demo" checked="checked" />
+						<p><span>全新系统 境界系统</span></p>
+						<input type="radio" name="demo" />
+						<p><span>全新赛季 八阵相争</span></p>
+						<input type="radio" name="demo" />
+						<p><span>全新赛季 无序挑战</span></p>
+						<input type="radio" name="demo" />
+						<p><span>核心系统 荣耀系统</span></p>
+						<input type="radio" name="demo" />
+						<p><span>全新福利 豪礼相送</span></p>
+						<ul>
+							<li>
+								<video width="100%" height="100%" controls="controls">
+									<source src="https://nie.v.netease.com/r/video/20200429/6c589203-3b2d-4ef1-877d-5aed526c8688.mp4" type="video/mp4">
+									</source>
+									<a href="#">下载视频</a>
+								</video>
+							</li>
+							<li><img src="img/1.jpg" /></li>
+							<li><img src="img/2.jpg" /></li>
+							<li><img src="img/4.jpg" /></li>
+							<li><img src="img/5.jpg" /></li>
+						</ul>
+					</div>
+				</div>
+				<div class="share ">
+					<ul>
+						<li>分享到:</li>
+						<li>
+							<a href="# "><i class="iconfont icon-weixin "></i>微信</a>
+						</li>
+						<li>
+							<a href="# "><i class="iconfont icon-yixin "></i>易信</a>
+						</li>
+						<li>
+							<a href="# "><i class="iconfont icon-xinlang "></i>新浪微博</a>
+						</li>
+						<li>
+							<a href="# "><i class="iconfont icon-qq-zone "></i>QQ空间</a>
+						</li>
+						<li>
+							<a href="# "><i class="iconfont icon-gengduo "></i>更多</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer ">
+			<div class="footer-box ">
+				<div class="box ">
+					<div class="img ">
+						<a href="# "><img src="img/netease.1.png " /></a>
+						<a href="# "><img src="img/nie.1.png " /></a>
+						<a href="# "><img src="img/wen.png " /></a>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<a href=" ">公司简介</a>-</li>
+							<li>
+								<a href=" ">商户服务</a>-</li>
+							<li>
+								<a href=" ">网易集团隐私政策及儿童个人信息保护规则</a>-</li>
+							<li>
+								<a href=" ">联系我们</a>-</li>
+							<li>
+								<a href=" ">商务合作</a>-</li>
+							<li>
+								<a href=" ">加入我们</a></li>
+						</ul>
+						<span>杭州网易雷火科技有限公司版权所有 ©1997-2020</span>
+						<a href=" ">点击查看家长关爱平台</a>
+					</div>
+				</div>
+				<p>本游戏适合16岁以上玩家进入</p>
+				<p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+				<p>
+					<a href="# ">《网络游戏管理暂行办法》</a> 文网游备字(2013)C-RPG001号 《网络文化经营许可证》 浙网文[2019]1372-138号 新广出审[2016]1963号
+					<a href="# "> 违法及不良信息举报中心</a>
+					<a href="# " ：>ICP备案：粤B2-20090191-18</a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>
